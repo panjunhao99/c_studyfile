@@ -7,12 +7,25 @@ using namespace std;
 //模板函数 自动类型推导的时候不可发生隐式类型转换
 //模板函数 用显示指定类型的时候 可发生隐式类型转换
 
+class Person
+{
+public:
+    string m_Name;
+    int age;
+};
 template<typename T>
 void mySwap(T&a, T&b)  //推导类型必须一致
 {
     T temp = a;
     a = b;
     b = temp;
+}
+
+template<> void mySwap(Person&a, Person&b) //Person类的重载
+{
+    int temp = a.age;
+    a.age = b.age;
+    b.age = temp;
 }
 
 //排序算法
