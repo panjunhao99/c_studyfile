@@ -56,6 +56,35 @@ public:
         return *this;
     }
 
+    void Push_Back(const T & val)
+    {
+        if(this->m_Capacity == this->m_Size)
+        {
+            return;
+        }
+        this->pAddress[this->m_Size] = val;
+        this->m_Size++;
+    }
+
+    void Pop_Back()
+    {
+        if(this->m_Size == 0)
+        {
+            return;
+        }
+        this->m_Size--;
+    }
+
+    int getSize()
+    {
+        return this->m_Size;
+    }
+
+    T& operator[](int index)          //这里使用T&使得结果可以作为左值存在
+    {
+        return this->pAddress[index];
+    }
+
     ~MyArray()
     {
         cout << "析构" << endl;
