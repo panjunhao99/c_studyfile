@@ -4,6 +4,8 @@
         "iosfwd": "cpp",
         "xstring": "cpp",
         "ostream": "cpp",
-        "templateclass": "cpp"
+        "templateclass": "cpp",
+        "vector": "cpp",
+        "deque": "cpp"
     }
 }
