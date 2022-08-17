@@ -6,6 +6,12 @@
         "ostream": "cpp",
         "templateclass": "cpp",
         "vector": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "list": "cpp",
+        "xtree": "cpp",
+        "utility": "cpp",
+        "map": "cpp",
+        "algorithm": "cpp",
+        "xutility": "cpp"
     }
 }
